@@ -1,0 +1,102 @@
+# Default values for alertmanager-discord-webhook.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: ""
+fullnameOverride: ""
+
+#########
+## APLICATION
+######
+
+image:
+imagePullPolicy: IfNotPresent
+imagePullSecrets: []
+
+env: {}
+
+# See https://github.com/masgustavos/alertmanager-discord-webhook/blob/master/config.example.yaml
+config: {}
+
+configAsSecret: {}
+  # name: alertmanager-discord-webhook-secret
+
+#########
+## SCHEDULING
+######
+
+resources: {}
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+tolerations: []
+
+nodeAffinity: {}
+
+podAnnotations: {}
+
+#########
+## MONITORING
+######
+
+livenessProbe:
+  path: /
+  initialDelaySeconds: 15
+  periodSeconds: 30
+  timeoutSeconds: 10
+  successThreshold: 1
+  failureThreshold: 3
+
+readinessProbe:
+  path: /
+  initialDelaySeconds: 15
+  periodSeconds: 30
+  timeoutSeconds: 10
+  successThreshold: 1
+  failureThreshold: 6
+
+#########
+## CONNECTIVITY
+######
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts: []
+
+  paths:
+    '/': {}
+    # '/other': {}
+
+  tls: []
+  # - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+#########
+## SCALING / ROLLOUT
+######
+
+replicaCount: 1
+
+hpa:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+  targetCpu: 70
+
+pdb:
+  maxUnavailable: 1
+  # minAvailable: 1
+
+rollingUpdate:
+  maxSurge: 1
