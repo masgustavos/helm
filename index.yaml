@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  alertmanager-discord-webhook:
+  - apiVersion: v2
+    created: "2021-05-04T22:13:12.253413291Z"
+    description: A Helm chart for masgustavos/alertmanager-discord
+    digest: c324f2503aece4bf257a5804c0343a39e65dd3444fd55a50550792749366fb9f
+    name: alertmanager-discord-webhook
+    type: application
+    urls:
+    - https://github.com/masgustavos/helm/releases/download/alertmanager-discord-webhook-0.0.2/alertmanager-discord-webhook-0.0.2.tgz
+    version: 0.0.2
+generated: "2021-05-04T22:13:12.253417491Z"
