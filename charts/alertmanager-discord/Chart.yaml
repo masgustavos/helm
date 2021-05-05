@@ -2,14 +2,14 @@ apiVersion: v2
 description: A Helm chart for masgustavos/alertmanager-discord
 name: alertmanager-discord
 type: application
-version: 0.0.2
+version: 0.0.3
 keywords:
   - alertmanager
   - discord
   - prometheus
   - kubernetes
   - webhook
-home: https://github.com/masgustavos/helm/tree/main/charts/alertmanager-discord-webhook
+home: https://github.com/masgustavos/helm/tree/main/charts/alertmanager-discord
 maintainers:
   - name: Gustavo Stein
     email: gustavosteinmattos@gmail.com
