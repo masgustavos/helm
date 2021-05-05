@@ -7,7 +7,7 @@ metadata:
 data:
   TZ: "America/Sao_Paulo"
 
-  CONFIG_PATH: "/config/config.yaml"
+  CONFIG_PATH: "/config/config.json"
 
   {{- with .Values.env }}
     {{- toYaml . | nindent 2 }}
