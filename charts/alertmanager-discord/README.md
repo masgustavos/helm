@@ -1,10 +1,10 @@
 # alertmanager-discord
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for masgustavos/alertmanager-discord
 
-**Homepage:** <https://github.com/masgustavos/helm/tree/main/charts/alertmanager-discord-webhook>
+**Homepage:** <https://github.com/masgustavos/helm/tree/main/charts/alertmanager-discord>
 
 ## Maintainers
 
@@ -16,7 +16,7 @@ A Helm chart for masgustavos/alertmanager-discord
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| config | object | `{}` | See https://github.com/masgustavos/alertmanager-discord-/blob/master/config.example.yaml |
+| config | object | `{}` | See https://github.com/masgustavos/alertmanager-discord/blob/master/config.example.yaml |
 | configAsSecret | object | `{}` | If you don't want to expose your webhooks, create the config as a secret with the key "config" |
 | env | object | `{}` |  |
 | fullnameOverride | string | `""` |  |

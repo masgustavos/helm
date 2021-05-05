@@ -42,7 +42,7 @@ spec:
           image: "{{ .Values.image }}"
           imagePullPolicy: {{ .Values.imagePullPolicy }}
           volumeMounts:
-            - name: alertmanager-discord-webhook-config
+            - name: alertmanager-discord-config
               mountPath: /config/
               {{- if .Values.configAsSecret.name -}}
               readOnly: true
@@ -99,7 +99,7 @@ spec:
         {{- toYaml . | nindent 8 }}
     {{- end }}
       volumes:
-        - name: alertmanager-discord-webhook-config
+        - name: alertmanager-discord-config
         {{- if .Values.configAsSecret.name -}}
           secret:
             secretName: {{ .Values.configAsSecret.name }}
