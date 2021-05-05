@@ -9,7 +9,7 @@ keywords:
   - prometheus
   - kubernetes
   - webhook
-home: https://github.com/masgustavos/helm/tree/main/charts/alertmanager-discord-webhook
+home: https://github.com/masgustavos/helm/tree/main/charts/alertmanager-discord
 maintainers:
   - name: Gustavo Stein
     email: gustavosteinmattos@gmail.com
