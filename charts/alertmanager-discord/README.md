@@ -6,6 +6,14 @@ A Helm chart for masgustavos/alertmanager-discord
 
 **Homepage:** <https://github.com/masgustavos/helm/tree/main/charts/alertmanager-discord>
 
+## Using
+
+```bash
+# Add the repository
+helm repo add masgustavos https://masgustavos.github.io/helm
+# Install the chart
+helm install alertmanager-discord --values <path_to_your_values> masgustavos/alertmanager-discord
+```
 ## Maintainers
 
 | Name | Email | Url |
