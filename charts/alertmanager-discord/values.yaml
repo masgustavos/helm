@@ -9,7 +9,7 @@ fullnameOverride: ""
 ## APLICATION
 ######
 
-image:
+image: masgustavos/alertmanager-discord:0.2.2
 imagePullPolicy: IfNotPresent
 imagePullSecrets: []
 
@@ -19,14 +19,16 @@ env: {}
 config: {}
 
 # -- If you don't want to expose your webhooks, create the config as a secret with the key "config"
-configAsSecret: {}
+configAsSecret:
+  {}
   # name: alertmanager-discord-secret
 
 #########
 ## SCHEDULING
 ######
 
-resources: {}
+resources:
+  {}
   # limits:
   #   cpu: 100m
   #   memory: 128Mi
@@ -75,7 +77,7 @@ ingress:
   hosts: []
 
   paths:
-    '/': {}
+    "/": {}
     # '/other': {}
 
   tls: []
