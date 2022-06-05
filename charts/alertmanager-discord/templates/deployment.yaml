@@ -44,7 +44,7 @@ spec:
           volumeMounts:
             - name: alertmanager-discord-config
               mountPath: /config/
-              {{- if .Values.configAsSecret.name -}}
+              {{- if .Values.configAsSecret.name }}
               readOnly: true
               {{- end }}
           envFrom:
@@ -100,7 +100,7 @@ spec:
     {{- end }}
       volumes:
         - name: alertmanager-discord-config
-        {{- if .Values.configAsSecret.name -}}
+        {{- if .Values.configAsSecret.name }}
           secret:
             secretName: {{ .Values.configAsSecret.name }}
             items:
