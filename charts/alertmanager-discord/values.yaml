@@ -9,7 +9,7 @@ fullnameOverride: ""
 ## APLICATION
 ######
 
-image: masgustavos/alertmanager-discord:0.2.2
+image: masgustavos/alertmanager-discord:0.2.3
 imagePullPolicy: IfNotPresent
 imagePullSecrets: []
 
