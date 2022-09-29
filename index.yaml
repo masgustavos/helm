@@ -2,6 +2,26 @@ apiVersion: v1
 entries:
   alertmanager-discord:
   - apiVersion: v2
+    created: "2022-09-29T23:52:40.166368616Z"
+    description: A Helm chart for masgustavos/alertmanager-discord
+    digest: 3a6e9a030535372c5955069ba8b1aa8cc900081155d6fe2d0dc37e9a5f3a359c
+    home: https://github.com/masgustavos/helm/tree/main/charts/alertmanager-discord
+    keywords:
+    - alertmanager
+    - discord
+    - prometheus
+    - kubernetes
+    - webhook
+    maintainers:
+    - email: gustavosteinmattos@gmail.com
+      name: Gustavo Stein
+      url: https://github.com/masgustavos
+    name: alertmanager-discord
+    type: application
+    urls:
+    - https://github.com/masgustavos/helm/releases/download/alertmanager-discord-0.0.6/alertmanager-discord-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
     created: "2021-07-16T00:53:15.413720949Z"
     description: A Helm chart for masgustavos/alertmanager-discord
     digest: 512762e1d3085bb950f9b8856bfa4751601d0f7fab1073a0b514e617401c9fb5
@@ -91,4 +111,4 @@ entries:
     urls:
     - https://github.com/masgustavos/helm/releases/download/alertmanager-discord-webhook-0.0.2/alertmanager-discord-webhook-0.0.2.tgz
     version: 0.0.2
-generated: "2021-07-16T00:53:15.413736049Z"
+generated: "2022-09-29T23:52:40.166385416Z"
